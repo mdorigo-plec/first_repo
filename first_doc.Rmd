@@ -9,11 +9,19 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-My *first* version controlled project in R studio. 
+This report documents my first attempt of using Git and Github to version control on RStudio project. I will be modifying this report, staging and committing changes to GitHub. 
 
-Let's create a test plot
+Let's create a test plot of distance (miles) and speed (mph)
 
 ```{r, test-plot}
-plot(cars)
+plot(cars, col ="red", xlab="speed(mph)", ylab="distance (miles)")
+```
+
+A summary of the data frame is given below
+
+```{r, cars-summary}
+library(knitr)
+kable(summary(cars))
+
 ```
 
